@@ -10,7 +10,7 @@ import jakarta.persistence.OneToOne;
 @Entity
 public class Message {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
     private Long id;
 
     private String content;
